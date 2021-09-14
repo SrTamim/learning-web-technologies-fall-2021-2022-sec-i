@@ -1,26 +1,26 @@
-<Product>
-    <Company id='11'>
+<products>
+    <company id='11'>
         <id> 11 </id>
         <name> Samsung </name>
-        <UnitPrice> 35000 </UnitPrice>
+        <unitprice> 35000 </unitprice>
         <stock> 50 </stock>
         <status> 1 </status>
-    </Company>
+    </company>
 
-    <Company id='20'>
+    <company id='20'>
         <id> 20 </id>
         <name> HTC </name>
-        <UnitPrice> 65300 </UnitPrice>
+        <unitprice> 65300 </unitprice>
         <stock> 35 </stock>
         <status> 0 </status>
-    </Company>
+    </company>
 
-    <Company id='23'>
+    <company id='23'>
         <id> 23 </id>
         <name> Nokia </name>
-        <UnitPrice> 25100 </UnitPrice>
+        <unitprice> 25100 </unitprice>
         <stock> 100</stock>
         <status> 1 </status>
-    </Company>
+    </company>
 
-</product>
+</products>

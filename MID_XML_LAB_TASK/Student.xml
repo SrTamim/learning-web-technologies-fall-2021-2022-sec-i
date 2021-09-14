@@ -1,32 +1,32 @@
-<Student>
-    <Student Sl.NO='23'>
-        <SL.NO.> 23 </SL.NO.>
+<students>
+    <student sl.no.='23'>
+        <sl.no.> 23 </sl.no.>
         <name> John Carter </name>
-        <AdmissionDate> 
+        <admissiondate> 
             <day> 25</day>
             <month> 12 </month>
             <year> 2015 </year>
-        </AdmissionDate>
-    </Student>
+        </admissiondate>
+    </student>
 
-    <Student SL.NO='29'>
-        <SL.NO.> 29 </SL.NO.>
+    <student sl.no.='29'>
+        <sl.no.> 29 </sl.no.>
         <name> Bob Marshal </name>
-        <AdmissionDate> 
+        <admissiondate> 
             <day> 13 </day>
             <month> 01 </month>
             <year> 1999 </year>
-        </AdmissionDate>
-    </Student>
+        </admissiondate>
+    </student>
 
-    <Student SL.NO='35'>
-        <SL.NO.> 35 </SL.NO.>
+    <student sl.no.='35'>
+        <sl.no.> 35 </sl.no.>
         <name> Clark Kent </name>
-        <AdmissionDate> 
+        <admissiondate> 
             <day> 17 </day>
             <month> 06 </month>
             <year> 2005 </year>
-        </AdmissionDate>
-    </Student>
+        </admissiondate>
+    </student>
 
-</Student>
+</students>
