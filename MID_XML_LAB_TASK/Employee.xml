@@ -1,5 +1,5 @@
-<Employees>
-	<Employee id='1'>
+<employees>
+	<employee id='1'>
 		<id> 1 </id>
 		<name>John Doe</name>
 		<address>
@@ -11,9 +11,9 @@
         </address>
 		<department>Sales</department>
 		<salary>$20000</salary>
-	</EMPLOYEE>
+	</employee>
 
-	<Employee id='2'>
+	<employee id='2'>
 		<id> 2 </id>
 		<name>Mark Zuckerberg</name>
 		<address>
@@ -25,9 +25,9 @@
         </address>
 		<department> Accounts </department>
 		<salary>$12000</salary>
-	</EMPLOYEE>
+	</employee>
 
-    <Employee id='3'>
+    <employee id='3'>
 		<id> 3 </id>
 		<name>Ala Voski</name>
 		<address>
@@ -39,5 +39,5 @@
         </address>
 		<department> Human Resource </department>
 		<salary> $30000 </salary>
-	</EMPLOYEE>
-</Employees>
+	</employee>
+</employees>
