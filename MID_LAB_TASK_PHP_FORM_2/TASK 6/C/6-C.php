@@ -14,17 +14,14 @@
 <fieldset>
 <legend>BLOOD GROUP</legend>
 	<form method="post" >
-	<select name="bloodgroup" value="<?php if(isset($group)){ echo $group; }?>" >
+	<select name="bloodgroup[]" >
                     <option disabled selected value> Select An Option </option>
-                    <option value="A Positive">A+</option>
-                    <option value="A Negative">A-</option>
-                    <option value="B Positive">B+</option>
-                    <option value="B Negative">B-</option>
-                    <option value="B Negative">B-</option>
-                    <option value="AB Positive">AB+</option>
-                    <option value="AB Negative">AB-</option>
-                    <option value="O Positive">O+</option>
-                    <option value="O Negative">O-</option>
+                    <option name="bloodgroup[]" value="A Positive" <?php if(isset($_POST['bloodgroup']) && in_array("A Positive",$_POST['bloodgroup'])) echo 'selected="selected"';?> >A+</option>
+                    <option name="bloodgroup[]" value="A Negative" <?php if(isset($_POST['bloodgroup']) && in_array("A Negative",$_POST['bloodgroup'])) echo 'selected="selected"';?> >A-</option>
+                    <option name="bloodgroup[]" value="B Positive" <?php if(isset($_POST['bloodgroup']) && in_array("B Positive",$_POST['bloodgroup'])) echo 'selected="selected"';?> >B+</option>
+                    <option name="bloodgroup[]" value="B Negative" <?php if(isset($_POST['bloodgroup']) && in_array("B Negative",$_POST['bloodgroup'])) echo 'selected="selected"';?> >B-</option>
+                    <option name="bloodgroup[]" value="AB Positive" <?php if(isset($_POST['bloodgroup']) && in_array("AB Positive",$_POST['bloodgroup'])) echo 'selected="selected"';?> >AB+</option>
+
         </select>
 
         <hr> 

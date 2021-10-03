@@ -14,13 +14,10 @@
 <fieldset>
 <legend>GENDER</legend>
 	<form method="post" >
-		<input type="radio" id="male" name="mygender" value="<?php if(isset($gender)){ echo $gender; }?>">
-		<label for="male">Male</label>
-		<input type="radio" id="female" name="mygender" value="<?php if(isset($gender)){ echo $gender; }?>">
-		<label for="female">Female</label>
-		<input type="radio" id="other" name="mygender" value="<?php if(isset($gender)){ echo $gender; }?>">
-		<label for="other">Other</label>
-
+		<input type="radio" name="mygender[]" value="Male" <?php if(isset($_POST['mygender']) && in_array("Male",$_POST['mygender'])) echo 'checked="checked"';?>/> Male
+		<input type="radio" name="mygender[]" value="Female" <?php if(isset($_POST['mygender']) && in_array("Female",$_POST['mygender'])) echo 'checked="checked"';?>/> Female
+		<input type="radio" name="mygender[]" value="Other" <?php if(isset($_POST['mygender']) && in_array("Other",$_POST['mygender'])) echo 'checked="checked"';?>/> Other
+		
         <hr>
 		<input type="submit" name="submit" value="Submit">
 	</form>
