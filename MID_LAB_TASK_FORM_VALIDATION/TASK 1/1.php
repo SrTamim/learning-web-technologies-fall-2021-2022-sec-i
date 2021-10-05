@@ -55,17 +55,15 @@
             ?>
             <fieldset>
                 <label>NAME</label>
-                <input type="text" id="name" name="name" value="" placeholder="NAME" size="15"><span class="red">
+                <input type="text" id="name" name="name" value="" placeholder="NAME" size="15">
                     <?php if ($nameError != "") {
                         echo "* - ";
                         echo $nameError;
                     }
                     ?>
-                </span>
-                <br>
+                <br><br>
                     <input type="submit" value="Submit">
             </fieldset>
-
         </div>
     </form>
 </body>
