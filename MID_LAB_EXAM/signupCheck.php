@@ -15,7 +15,6 @@
 					$myuser = $idd."|".$password."|".$name."\r\n";
 					fwrite($myfile, $myuser);
 					fclose($myfile);
-
 					header('location: login.html');
 			}
 				else{
@@ -25,5 +24,6 @@
 		else{
 			echo "invalid id....";
 		}
+	}
 	
 ?>

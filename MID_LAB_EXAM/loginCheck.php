@@ -3,20 +3,19 @@
 
 	if(isset($_POST['submit'])){
 
-		$idd 	= $_POST['id'];
+		$id 	= $_POST['id'];
 		$password 	= $_POST['password'];
 
-		if($idd != ""){
+		if($id != ""){
 			if($password != ""){
 				
 				$myfile = fopen('user.txt', 'r');
-				
 				while(!feof($myfile)){
 					
 					$data = fgets($myfile);
 					$idd = explode('|', $data);	
 					
-					if($idd == trim($idd[1]) && $password == trim($idd[2])){
+					if($id == trim($idd[1]) && $password == trim($idd[2])){
 						setcookie('flag', 'true', time()+3600, '/');
 						header('location: home.php');
 					}
