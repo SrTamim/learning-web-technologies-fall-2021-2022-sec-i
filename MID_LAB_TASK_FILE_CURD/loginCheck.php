@@ -10,9 +10,6 @@
 			if($password != ""){
 				
 				$myfile = fopen('user.txt', 'r');
-				//$data = fread($myfile, filesize('user.txt'));
-				//fgets($myfile);
-				//feof($myfile);
 				
 				while(!feof($myfile)){
 					
