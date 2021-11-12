@@ -10,14 +10,15 @@
 
 <body>
 
-    <?php
+<script>
+    function validateForm() {
 
-    $Name = "";
-    $nameError = "";
+    var Name = "";
+    var nameError = "";
 
     if (isset($_POST['Submit'])) {
-        $input = $_POST['inputText'];
-        $Name = $input . "<br>";
+        var input = $_POST['inputText'];
+        var Name = $input . "<br>";
     }
 
     if (($_SERVER["REQUEST_METHOD"] == "POST")) {
@@ -38,14 +39,14 @@
             }
         }
     }
-    function validateInput($information)
+    function validateInput(information)
     {
-        $information = trim($information);
-        $information = stripslashes($information);
-        $information = htmlspecialchars($information);
-        return $information;
+        var information = information.trim();
+        var information = information.stripslashes();
+        var information = information.htmlspecialchars();
+        return information;
     }
-    ?>
+    </script>
 
     <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <div>
