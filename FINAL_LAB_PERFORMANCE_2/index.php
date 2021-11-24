@@ -31,6 +31,7 @@
         </div>
         
       </header>
+
       <section class="bottom-part">
         <div class="features">
           <div class="main-menu">
@@ -83,6 +84,6 @@
       </section>
     </div>
   </main>
-
+  
 </body>
 </html>
